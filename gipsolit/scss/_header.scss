@@ -1,0 +1,79 @@
+.header {
+	height: 70px;
+	@media screen and ( max-width: 575px ) {
+		height: 60px;
+		background-color: #fff;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		@media screen and ( max-width: 991px ) {
+			justify-content: space-between;
+		}
+	}
+	&__logo {
+		flex-grow: 1;
+		@media screen and ( max-width: 991px ) {
+			flex-grow: 0;
+		}
+		@media screen and ( max-width: 575px ) {
+			transform: translateX(-50%);
+			position: absolute;
+			left: 50%;
+			top: 82px;
+		}
+		img  {
+			@media screen and ( max-width: 768px ) {
+				width: 90%;
+			}
+			@media screen and ( max-width: 575px ) {
+				width: auto;
+			}
+		}
+	}
+	&__phone {
+		a { 
+			font-size: 20px;
+			font-weight: 700;
+			color: #292929;
+			@media screen and ( max-width: 1199px ) {
+				font-size: 18px;
+			}
+			@media screen and ( max-width: 768px ) {
+				font-size: 16px;
+			}
+			@media screen and ( max-width: 575px ) {
+				font-size: 14px;
+				color: #242424;
+			}
+		}
+	}
+	&__btn {
+		margin-left: 31px;
+		@media screen and ( max-width: 768px ) {
+			width: 160px;
+		}
+		@media screen and ( max-width: 575px ) {
+			width: 136px;
+			height: 36px;
+			border-radius: 8px;
+			box-shadow: 4px 6.9px 13px 0 rgba(0, 0, 0, 0.04);
+			border: solid 1px #ffbb00;
+		}
+		&_after-small {
+			@media screen and ( max-width: 768px ) {
+				display: none;
+			}
+		}
+		&_small {
+			display: none;
+			@media screen and ( max-width: 768px ) {
+				display: block;
+			}
+		}
+	}
+}

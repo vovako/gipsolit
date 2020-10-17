@@ -1,0 +1,219 @@
+.prices {
+	padding: 120px 0 115px;
+	background: #005e00 url('../img/prices-bg.jpg');
+	text-align: center;
+	@media screen and (max-width: 1199px) {
+		padding: 90px 0;
+	}
+	@media screen and (max-width: 991px) {
+		padding: 40px 0 124px;
+	}
+	@media screen and (max-width: 768px) {
+		background-image: none;
+	}
+	&__wrapper {
+		position: relative;
+	}
+	&__header-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 375px;
+		height: 65px;
+		font-size: 18px;
+		@media screen and (max-width: 1199px) {
+			font-size: 15px;
+			width: 300px;
+		}
+		@media screen and (max-width: 991px) {
+			bottom: -9px;
+			transform: translate(50%, 100%);
+			top: auto;
+			right: 50%;
+		}
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			font-size: 15px;
+		}
+	}
+	&__text {
+		margin-top: 49px;
+		font-size: 18px;
+		color: #ffffff;
+		line-height: 24px;
+		@media screen and (max-width: 575px) {
+			margin-top: 20px;
+		}
+	}
+	&__row {
+		display: flex;
+		margin: 90px -20px -30px;
+		flex-wrap: wrap;
+		@media screen and (max-width: 1199px) {
+			margin: 60px -10px -30px;
+		}
+		@media screen and (max-width: 991px) {
+			margin: 40px -20px -21px;
+		}
+		@media screen and (max-width: 768px) {
+			margin: 26px -20px -21px;
+		}
+	}
+
+	&__column {
+		flex: 0 0 33.3333%;
+		padding: 0 20px 30px;
+		display: flex;
+		@media screen and (max-width: 1199px) {
+			padding: 0 10px 30px;
+		}
+		@media screen and (max-width: 991px) {
+			padding: 40px 20px -21px;
+		}
+		@media screen and (max-width: 768px) {
+			flex-basis: 100%;
+			padding-bottom: 21px;
+		}
+	}
+}
+
+.prices-item {
+	background: #fff;
+	padding: 50px 32px 45px;
+	box-shadow: 0px 14px 21px 0 rgba(0, 0, 0, 0.17);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	@media screen and (max-width: 1199px) {
+		padding: 40px 25px 30px;
+	}
+	@media screen and (max-width: 991px) {
+		padding: 30px 17px 20px;
+	}
+	@media screen and (max-width: 575px) {
+		padding: 22px 17px 27px;
+	}
+
+	&__header {
+		font-size: 18px;
+		font-weight: bold;
+		height: 20px;
+		color: #1a1820;
+		margin-bottom: 35px;
+		@media screen and (max-width: 1199px) {
+			font-size: 17px;
+		}
+		@media screen and (max-width: 575px) {
+			font-size: 16px;
+		}
+	}
+
+	&__image {
+		margin-bottom: 35px;
+		width: 100%;
+		height: 200px;
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 25px;
+		}
+		@media screen and (max-width: 991px) {
+			height: 140px;
+		}
+		@media screen and (max-width: 575px) {
+			height: 180px;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__price {
+		font-size: 19px;
+		font-weight: bold;
+		color: #1a1820;
+		margin-bottom: 35px;
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 20px;
+			font-size: 17px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 14px;
+		}
+		span {
+			font-size: 30px;
+			@media screen and (max-width: 1199px) {
+				font-size: 25px;
+			}
+			@media screen and (max-width: 991px) {
+				font-size: 22px;
+			}
+		}
+	}
+
+	&__spoiler {
+		display: none;
+		font-size: 18px;
+		color: #006b00;
+		text-decoration: underline;
+		margin-bottom: 24px;
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
+	}
+
+	&__list {
+		margin-bottom: 22px;
+		flex: 1 1 auto;
+		@media screen and (max-width: 1199px) {
+			margin-bottom: 18px;
+		}
+		@media screen and (max-width: 991px) {
+			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+			background: #eee;
+			border-left: 3px solid lightgray;
+			border-right: 3px solid lightgray;
+		}
+		li {
+			font-size: 18px;
+			color: #1a1820;
+			margin-bottom: 8px;
+			@media screen and (max-width: 1199px) {
+				font-size: 16px;
+			}
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+				line-height: 19px;
+				margin-bottom: 3px;
+			}
+			&::before {
+				content: '\2713';
+				margin-right: 7px;
+				font-size: 20px;
+				font-weight: 900;
+				color: darken($icons-color, 10%);
+				@media screen and (max-width: 991px) {
+					margin-right: 5px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	&__btn {
+		width: 210px;
+		font-size: 18px;
+		font-weight: 600;
+		color: #ffffff;
+		height: 65px;
+		@media screen and (max-width: 991px) {
+			height: 58px;
+			width: 100%;
+		}
+	}
+}

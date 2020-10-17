@@ -1,0 +1,14 @@
+* {
+	font-family: 'Proxima Nova', sans-serif;
+}
+@import "my-reset";
+@import "variable";
+@import "blocks";
+
+//sections
+@import "header";
+@import "promo";
+@import "advantages";
+@import "popup";
+@import "prices";
+@import "feedback";
